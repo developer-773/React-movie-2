@@ -1,0 +1,24 @@
+.movie {
+    background-size: 100% ;
+    background-size: cover;
+}
+
+.movie_poster {
+    border-radius: 15px;
+    box-shadow:  -6rem 0rem 50rem rgb(0, 0, 0),  6rem 0rem 50rem rgb(0, 0, 0);
+}
+
+.movie_inner {
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+    background-image: linear-gradient(90deg,#000047 calc(40vw - 650px),#000000d6 30%,#0d0e0ed6);
+}
+
+.movie_info_item:not(:first-child) {
+    margin: 0 15px;
+}
+
+.placeholder {
+    color: #bcbcbc !important;
+}

@@ -1,0 +1,16 @@
+.comments_box {
+    width: 500px;
+    color: #fff;
+}
+
+.comments_count {
+    margin-top: 23px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid rgb(119, 116, 116);
+}
+
+.comments_login {
+    color: #fff;
+    background-color: #000;
+    padding: 11px;
+}

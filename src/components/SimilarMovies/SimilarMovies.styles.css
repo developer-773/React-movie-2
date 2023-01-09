@@ -1,0 +1,17 @@
+.movie_box {
+    transform: scale(.95);
+    transition: all .3s ease-in-out;
+}
+
+.movie_box:hover {
+    transform: scale(1);
+}
+
+.movie_txt {
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 0;
+    padding: 11px;
+    background-color: rgba(0, 0, 0, 0.658);
+}
