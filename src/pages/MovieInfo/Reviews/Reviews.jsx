@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import secureLocalStorage from "react-secure-storage";
+import { AuthContext } from "../../../context";
 import CommentsAddForm from "./CommentsAddForm";
 import CommentsList from "./CommentsList";
 import "./Reviews.styles.css";
@@ -19,6 +20,8 @@ const Reviews = () => {
 			],
     }
 	);
+
+	const { user, setUser } = useContext(AuthContext);
 
 	let maxId = 2;
 
@@ -101,7 +104,9 @@ const Reviews = () => {
 					Sign in
 				</Link>
 			</p>
+      {user !== '' ? 
 			<CommentsAddForm addComment={addComment} />
+      : null}
 			<CommentsList
 				onToggleLiked={onToggleLiked}
 				onToggleDisLiked={onToggleDisLiked}
