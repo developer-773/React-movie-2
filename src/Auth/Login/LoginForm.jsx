@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import secureLocalStorage from "react-secure-storage";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { AuthContext } from "../../context";
@@ -29,6 +28,8 @@ const LoginForm = () => {
 	});
 
 	const onSubmit = (data) => {
+		console.log(data)
+		console.log(user)
 		user?.data?.map((item) => {
 			if (item.email === data.email && item.password === data.password) {
 				navigate("/");

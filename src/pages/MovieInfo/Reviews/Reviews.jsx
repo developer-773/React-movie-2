@@ -96,9 +96,9 @@ const Reviews = () => {
 		<div className="comments_box">
 			<p className="comments_count">{comment?.data?.length} comments</p>
 			<p className="mt-5">
-				You must be logged in to post comments.{" "}
-				<Link className="comments_login" to="/login">
-					Log in
+				You must be Sign in to post comments.{" "}
+				<Link className="comments_login" to="/register">
+					Sign in
 				</Link>
 			</p>
 			<CommentsAddForm addComment={addComment} />
